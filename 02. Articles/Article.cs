@@ -36,7 +36,15 @@ namespace _02._Articles
             Title = newTitle;
         }
 
+        //default methods -> .ToString() -> печата "име на класа"
+        // пренаписваме метода, така, че да работи такак както аз искам
 
+        public override string ToString()
+        {
+            // метода .ToString() ще връща данни за обкета по формата на стринг
+            // {заглавие} - {съдържание}: {автор}
+            return $"{Title} - {Content}: {Author}";  
+        }
 
 
 
